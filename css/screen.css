@@ -1,3 +1,15 @@
+screen2.css
+Today
+6:53 PM
+Y
+Yi Ting Lin edited an item
+Style Sheet
+screen2.css
+3:02 PM
+Y
+Yi Ting Lin uploaded an item
+Style Sheet
+screen2.css
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -37,7 +49,7 @@ main,
 menu,
 nav,
 section,
-summary {
+summary{
   display: block;
 }
 
@@ -52,12 +64,13 @@ html {
   font-family: "Depot New W00", Helvetica, Arial, sans-serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
-  background-color: #BFBFBF;
+  background-color: #FFD3A2;
   color: #59453C;
 }
 body {
   font-size: 1.1875em;         /* ~ 19px base font size */
   line-height: 1.2631578947em; /* ~ 24px base line height */
+  background-color: #FFD3A2;
 }
 b,
 strong {
@@ -74,11 +87,11 @@ ins {
 /* Links */
 a {
   text-decoration: none;
-  color: #e8e8e1;
+  color: #567448;
   border-bottom: 0.05263157895em dotted;
 }
 .preview a {
-  color: #D3D3D3;
+  color: #FFCE0B;
 }
 p {
   padding-bottom: 1.2631578947em;
@@ -90,11 +103,8 @@ ol,
 ul {
   padding-bottom: 1.2631578947em;
 }
-ul > li {
-  list-style-type: square;
-}
+
 ol > li {
-  list-style-type: decimal;
   margin-left: 1em;
 }
 li ul,
@@ -122,10 +132,10 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #4c4c4a;
+  background-color: #F06C94;
   padding: 0.5em 0 0.5em 0.3em;
+  margin-top: 0.2em;
   margin-bottom: 0.2em;
-  color:#FFFFFF;	
 }
 
 h4 {
@@ -133,7 +143,7 @@ h4 {
   font-weight: bold;
   padding-bottom: 1.2631578947em;
 }
-h4 {
+h5 {
   text-transform: none;
   padding-bottom: 0.6315789474em;
 }
@@ -142,7 +152,7 @@ h4 {
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #4c4c4a; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #F06C94; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
@@ -150,10 +160,35 @@ nav {
   top: 0;
   left: 0;
 }
-#links,
 #instructor {
   margin-top: 2.5263157895em;
 }
+#w1,#w2,#w3,
+#w4,#w5,#w6,
+#w7,#w8,#w9,
+#w10,#w11,#w12,
+#w13,#w14,#w15,
+#w16,#labs_t,
+#pro1_t,#pro2_t,
+#pro3_t{
+  background-color: #FFBD73;
+}
+
+#ca_head,
+#ca_body{
+  background-color: #FFD3A2;
+}
+
+#w1_t,#w2_t,#w3_t,
+#w4_t,#w5_t,#w6_t,
+#w7_t,#w8_t,#w9_t,
+#w10_t,#w11_t,#w12_t,
+#w13_t,#w14_t,#w15_t,
+#w16_t{
+  background-color: #FFD3A2;
+}
+
+
 
 /* ========== Modules ========== */
 
@@ -187,32 +222,30 @@ small,
 nav {
   font-weight: 200;
 }
-.nav {
+.nav{
   margin-left: 0;
   padding-bottom: 0;
 }
-.nav li {
+.nav li{
   float: left;
   width: 25%;
   list-style-type: none;
   padding-bottom: 0;
 }
-/*color of the nvigation bar*/
 .nav a {
   display: block;
   text-align: center;
   line-height: 1;
   padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
-  color: #e8e8e1;
-  background-color:#4c4c4a;
+  color: #333;
+  background-color: #F06C94;
   border-bottom: 0;
 }
-
 #calendar #nav-cal a,
 #projects #nav-pro a,
 #policies #nav-pol a,
-#due_date #nav-dat a {
-  background-color: #BFBFBF;
+#links #nav-lnk a {
+  background-color: #9D6D72;
 }
 
 /* Calendar */
@@ -258,7 +291,7 @@ nav {
 }
 
 .preview {
-  background-color: #D3D3D3;
+  background-color: #FFBD73;
   color: #222;
   padding-top: 1.2631578947em;
   margin-right: -11.3208%; /* 60px / 530px (650-120) */
@@ -276,7 +309,7 @@ nav {
   margin-left: -11.3208%;
 }
 .preview .assigned {
-  background-color: #D3D3D3;
+  background-color: #59453C;
   color: #EEE;
 }
 .preview .assigned small {
@@ -299,6 +332,23 @@ nav {
 #calendar .is-next {
   margin-bottom: 1.2631578947em;
 }
+/* Button*/
+.accordion {
+  background-color: #e8abb2;
+  color: #333;
+  cursor: pointer;
+  padding: 0.6315789474em;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #FFD3A2;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.active, .accordion:hover {
+  background-color: #9D6D72;
+}
 
 
 /* Table */
@@ -308,20 +358,18 @@ table {
   margin-bottom: 1em;
 }
 table, th, td {
-	border: 1px solid #59453C;
+	border: 1px solid #FFD3A2;
 	padding: 0px 10px;
 }
-/*table column layout*/
 .tablehead {
-	background-color: #4c4c4a;
+	background-color: #F06C94;
 	text-align: center;
-  	font-weight: 700;
+  font-weight: 700;
 }
 .tabletitle {
   padding-bottom: 15px;
   padding-top: 15px;
   border-left: none;
-  color:#FFFFFF;
 }
 #protable {
   margin-bottom: 0;
@@ -351,10 +399,10 @@ td {
   width: 120px;
 }
 .redfont {
-	color: #F0F0F0;
+	color: red;
 }
 .darkredfont {
-  color: #F0F0F0;
+  color: #d70000;
 }
 #tablep {
 	width: 80%
@@ -364,11 +412,12 @@ td {
 	margin-left: 30%;
 	margin-right: 30%;
 }
-#h3wide {
-  width: 750px;
+#h3wide,
+#inswide {
+  background-color: #F06C94;
 }
 
-/* Policies */ 
+/* Policies */
 
 .indent {
   margin-left: 2em;
@@ -391,6 +440,7 @@ td {
   width: 70%;
 }
 
+
 /* ========== State ========== */
 
 .hasjs .extended {
@@ -399,24 +449,75 @@ td {
 .is-visible .extended {
   display: block;
 }
+/* js tools*/
+
 
 /* Media Queries */
 
 /* @345px */
 
-@media screen and (min-width: 21.5625em) {
-  /* Let the nav breathe a bit more */
+@media screen and (min-width: 345px) {
+  html{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
   nav {
-    font-weight: normal;
+    width: 100%;
+    font-size: 0.8em;
   }
   .nav a {
-    padding: 0.6315789474em;
+    font-size: 0.8em;
+  }
+  table {
+  	table-layout: fixed;
+  	width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  table, th, td {
+  	border: 1px solid #59453C;
+  	padding: 0px 10px;
+  }
+  .tablehead {
+  	background-color: #F06C94;
+  	text-align: center;
+    font-weight: auto;
+  }
+  .tabletitle {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-left: none;
+  }
+  #calendar,
+  #policies,
+  #projects,
+  #instructor,
+  #links {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #inswide,
+  #h3wide{
+    width: 300px;
+    text-align: left;
+  }
+  #protable{
+    width: 300px;
   }
 }
 
 /* @560px */
 
 @media screen and (min-width: 560px) {
+  nav{
+    font-size: 20px;
+  }
+  #inswide,
+  #h3wide{
+    width: 500px;
+  }
+
   .flexbox .agenda > ol {
     display: flex;
     justify-content: space-between;
@@ -442,28 +543,29 @@ td {
   .flexbox #essential-references {
     flex: 0 1 43.5484%;
   }
+  table {
+  	table-layout: fixed;
+  	width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 /* @650px */
 
-@media screen and (min-width: 40.625em) {
-  html {
-    padding: 0;
+@media screen and (min-width: 650px) {
+  html{
+    font-size: 1em;
   }
-  header,
-  footer,
-  .primary,
+  #calendar,
+  #policies,
+  #projects,
   #instructor,
   #links {
-    padding-left: 14.28571429%; /* 93/651 */
-    padding-right: 28.57142857%; /* 186/651 */
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .tagline,
   .fineprint {
-  }
-  nav {
-    width: 57.14285714%;
-    left: 14.28571429%;
   }
   .preview {
     margin-left: -25%; /* 93/372 */
@@ -481,19 +583,36 @@ td {
     padding-left: 1em;
     width: 42.5%;
     margin-right: 0;
+    padding-bottom: 0.5em;
   }
-  
+
   #essential-references {
     position: absolute;
     top: 0px;
     width: 42.5%;
     margin-left: 55%;
+    padding-bottom: 0.5em;
   }
-
+  #inswide,
+  #h3wide{
+    padding-top: 0.5em;
+    width: 500px;
+    padding-bottom: 0.5em;
+  }
 }
 
 @media screen and (min-width: 804px) {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
+  }
+  nav{
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+  #inswide,
+  #h3wide{
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
